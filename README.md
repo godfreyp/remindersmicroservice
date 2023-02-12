@@ -1,6 +1,6 @@
 # remindersmicroservice
 
-Initialize venv and install both firebase-admin and flask. This will also require an firebase_admin SDK JSON from https://console.firebase.google.com/u/0/project/backendw2023/firestore/data/~2Fusers~2Ftest@gmail.com
+Initialize venv and install both firebase-admin and flask. This will also require an firebase_admin SDK JSON from https://console.firebase.google.com/u/0/project/backendw2023/
 
 This microservice runs independently from the reminders app backend.
 
