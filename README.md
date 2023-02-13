@@ -22,7 +22,7 @@ This microservice runs independently from the reminders app backend.
 
 ## Communications Contract
 
-The microservice utilizes communicates using JSON through APIs.
+The microservice communicates using JSON through APIs.
 
 The host is set to http://localhost/8001 and there are two paths available.
 
@@ -61,7 +61,7 @@ This message, along with its accompanying status code, will inform you whether y
 
 **SUCCESSFUL RESPONSE**
 
-Otherwise, a JSON containing a list of reminders is returned with a status code of 200
+A JSON containing a list of reminders is returned with a status code of 200
 
 {
   [
