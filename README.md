@@ -28,12 +28,17 @@ The host is set to http://localhost/8001 and there are two paths available.
 
 ### 1. /handshake
 
-Handshake takes a JSON with three paramters
+**METHOD: POST**
+
+**JSON BODY**
+
 {
   "email": STRING,
   "password": STRING,
   "c_user_id": INT
 }
+
+**RESPONSE**
 
 It returns a JSON containg the parameter message:
 
@@ -46,18 +51,15 @@ This message, along with its accompanying status code, will inform you whether y
 
 ### 2. /getreminders
 
-This takes a JSON with one parameter
+**METHOD: GET**
+
+**JSON BODY**
 
 {
   "c_user_id": INT
 }
 
-If the user has no performed a handshake or there is an error, then a JSON with one parameter is returned along with a non-200 status code.
-
-{
-  "message": STRING
-}
-
+**SUCCESSFUL RESPONSE**
 
 Otherwise, a JSON containing a list of reminders is returned with a status code of 200
 
@@ -67,4 +69,12 @@ Otherwise, a JSON containing a list of reminders is returned with a status code 
     object2,
     object3...
   ]
+}
+
+**FAILED RESPONSE**
+
+If the user has no performed a handshake or there is an error, then a JSON with one parameter is returned along with a non-200 status code.
+
+{
+  "message": STRING
 }
