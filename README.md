@@ -10,8 +10,10 @@ Because the app is currently hosted locally, you will need the following.
 
 Download reminders_microservice.py and install:
 
-> firebase-admin 
+> firebase-admin
+
 > flask
+
 > argon2-cffi
 
 Additionally, you will also need an firebase_admin SDK JSON from https://console.firebase.google.com/u/0/project/backendw2023/
