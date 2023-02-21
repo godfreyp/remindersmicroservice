@@ -73,13 +73,15 @@ A JSON containing a list of reminders is returned with a status code of 200
 
 Each object will have four properties:
 
-Name: String
+> Name: String
 
-Date: String (YYYY-MM-DD)
+> Date: String (YYYY-MM-DD)
 
-Time: String (HH:MM:SS.xxxxz)
+> Time: String (HH:MM:SS.xxxxz)
 
-Contacts: Array (Contents, String)
+> Contact_id: int
+
+> Contact_name: String
 
 **FAILED RESPONSE**
 
