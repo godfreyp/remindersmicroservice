@@ -71,7 +71,7 @@ A JSON containing a list of reminders is returned with a status code of 200
   ]
 }
 
-Each object will have four properties:
+Each object will have five properties:
 
 > Name: String
 > 
