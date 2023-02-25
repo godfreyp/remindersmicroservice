@@ -92,14 +92,17 @@ def getreminders():
         # Convert the "deadline" to two seperate fields, "date" and "time"
         date_time = r["deadline"].split(" ")
         r["date"], r["time"] = date_time[0], date_time[1]
+        r["task"] = r["name"]
 
         # Remove unecessary fields
+        del r["name"]
         del r["deadline"]
         del r["email"]
-        del r["description"]
+        del r["id"]
 
         # Add the reminder to the list
         reminders.append(r)
+    print(reminders)
     return jsonify(reminders), 200
 
 if __name__ == '__main__':
