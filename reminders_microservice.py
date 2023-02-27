@@ -100,6 +100,11 @@ def getreminders():
         del r["email"]
         del r["id"]
 
+        if r["contact_id"] == "":
+            del r["contact_id"]
+        else:
+            r["contact_id"] = int(r["contact_id"])
+
         # Add the reminder to the list
         reminders.append(r)
     print(reminders)
